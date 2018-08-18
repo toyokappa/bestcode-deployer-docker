@@ -1,4 +1,4 @@
-FROM toyokappa/awseb-deployer-docker
+FROM toyokappa/aws-deployer-docker
 
 # ruby install
 RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz && \
