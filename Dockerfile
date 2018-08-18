@@ -13,7 +13,8 @@ RUN curl -O http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz && \
 RUN gem install bundler
 
 # node install
-FROM node:10
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install -y nodejs --no-install-recommends
 
 # yarn install
 # 参考: https://yarnpkg.com/lang/ja/docs/install/#debian-stable
